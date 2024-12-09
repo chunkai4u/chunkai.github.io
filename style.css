@@ -1,0 +1,35 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    background: #f0f8ff;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    position: relative;
+    z-index: 2;
+    font-size: 2rem;
+    color: #333;
+    margin-top: 50px;
+}
+
+#bee-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none; /* Ensures the bee does not interfere with mouse events */
+}
+
+#bee {
+    width: 60px;
+    height: auto;
+    transition: transform 0.1s linear;
+}
